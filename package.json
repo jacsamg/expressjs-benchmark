@@ -1,0 +1,14 @@
+{
+  "name": "expressjs-benchmark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:v4": "npm start --prefix ./v4",
+    "start:v5": "npm start --prefix ./v5",
+    "benchmark:v4": "autocannon -c 100 -d 30 -p 10 http://localhost:3004/",
+    "benchmark:v5": "autocannon -c 100 -d 30 -p 10 http://localhost:3005/"
+  },
+  "devDependencies": {
+    "autocannon": "^7.15.0"
+  }
+}
