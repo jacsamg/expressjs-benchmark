@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start:v4": "npm start --prefix ./v4",
-    "start:v5": "npm start --prefix ./v5",
     "start:connect": "npm start --prefix ./connect",
+    "start:hono": "npm start --prefix ./hono",
+    "start:express-v4": "npm start --prefix ./express-v4",
+    "start:express-v5": "npm start --prefix ./express-v5",
     "benchmark:connect": "autocannon -c 100 -d 30 http://localhost:3000/",
-    "benchmark:v4": "autocannon -c 100 -d 30 http://localhost:3004/",
-    "benchmark:v5": "autocannon -c 100 -d 30 http://localhost:3005/"
+    "benchmark:hono": "autocannon -c 100 -d 30 http://localhost:3001/",
+    "benchmark:express-v4": "autocannon -c 100 -d 30 http://localhost:3004/",
+    "benchmark:express-v5": "autocannon -c 100 -d 30 http://localhost:3005/"
   },
   "devDependencies": {
     "autocannon": "^7.15.0"
