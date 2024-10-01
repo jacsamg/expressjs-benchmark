@@ -4,7 +4,7 @@ const http = require('http');
 const port = 3000;
 const app = connect();
 
-app.get('/', (req, res) => {
+app.use('/', (req, res) => {
   res.json({ status: 200 });
 });
 
